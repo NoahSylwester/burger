@@ -5,4 +5,4 @@ VALUES
 ("Bacon cheeseburger"),
 ("Bleu cheese and Chile"),
 ("Sheep stomach and veal"),
-("Haggis and Celery")
+("Haggis and Celery");
