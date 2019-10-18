@@ -14,7 +14,7 @@ $(function() {
       data: newDevouredState
     }).then(
       function() {
-        console.log("changed sleep to", newDevoured);
+        console.log("changed devoured to", newDevoured);
         // Reload the page to get the updated list
         location.reload();
       }
