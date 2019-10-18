@@ -17,11 +17,9 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burgers", function(req, res) {
-  cat.insertOne([
-    "burger_name", "devoured"
-  ], [
-    req.body.name, req.body.sleepy
-  ], function(result) {
+  burger.insertOne(
+    req.body.name,
+    function(result) {
     // Send back the ID of the new quote
     res.json({ id: result.insertId });
   });
@@ -32,7 +30,7 @@ router.put("/api/burgers/:id", function(req, res) {
 
   console.log("condition", condition);
 
-  cat.update({
+  burger.update({
     sleepy: req.body.sleepy
   }, condition, function(result) {
     if (result.changedRows == 0) {
