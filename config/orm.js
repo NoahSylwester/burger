@@ -11,8 +11,8 @@ var orm = {
       cb(result);
     });
   },
-  insertOne: function() {
-    var queryString = "INSERT INTO " + tableInput + ";";
+  insertOne: function(tableInput, burgerNameInput, cb) {
+    var queryString = "INSERT INTO " + tableInput + " ('burger_name') VALUES ('" + burgerNameInput + "');";
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;
@@ -20,8 +20,8 @@ var orm = {
       cb(result);
     });
   },
-  updateOne: function() {
-    var queryString = "UPDATE " + tableInput + ";";
+  updateOne: function(tableInput, burgerNameInput, cb) {
+    var queryString = "UPDATE " + tableInput + " SET devoured=TRUE WHERE burger_name='" + burgerNameInput +"';";
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;
