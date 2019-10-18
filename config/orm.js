@@ -12,7 +12,7 @@ var orm = {
     });
   },
   insertOne: function(tableInput, burgerNameInput, cb) {
-    var queryString = "INSERT INTO " + tableInput + " ('burger_name') VALUES ('" + burgerNameInput + "');";
+    var queryString = "INSERT INTO " + tableInput + " (burger_name) VALUES ('" + burgerNameInput + "');";
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;
