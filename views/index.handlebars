@@ -15,7 +15,7 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      <li>{{burger_name}}<button data-id="{{id}}" data-newDevoured="{{devoured}}" class="update-button btn btn-sm btn-primary">Update</button><button data-id="{{id}}" class="delete-button btn btn-sm btn-primary">Delete</button></li>
+      <li>{{burger_name}}<button data-id="{{id}}" class="delete-button btn btn-sm btn-primary">Delete</button></li>
     {{/if}}
   {{/each}}
 </ul>
