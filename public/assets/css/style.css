@@ -1,5 +1,17 @@
 body {
   padding: 20px;
+  background: burlywood;
+  text-align: center;
+}
+
+h1 {
+  padding: 10px;
+  background: rgb(143, 56, 22)
+}
+
+img {
+  object-fit: contain;
+  width: 25%;
 }
 
 li {
@@ -7,6 +19,8 @@ li {
   border: 1px black solid;
   border-radius: 7px;
   padding: 5px;
+  background: rgb(141, 23, 23);
+  color: white;
 }
 
 button {
