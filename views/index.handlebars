@@ -5,7 +5,7 @@
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      <li>{{burger_name}}</li>
+      <li>{{burger_name}}<button class="update-button btn btn-sm btn-primary">Update</button><button class="delete-button btn btn-sm btn-primary">Delete</button></li>
     {{/unless}}
   {{/each}}
 </ul>
@@ -15,7 +15,7 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      <li>{{burger_name}}</li>
+      <li>{{burger_name}}<button class="update-button btn btn-sm btn-primary">Update</button><button class="delete-button btn btn-sm btn-primary">Delete</button></li>
     {{/if}}
   {{/each}}
 </ul>
@@ -46,5 +46,5 @@
     <input type="radio" name="devoured" value="0"> Eaten
   </div> --}}
 
-  <button type="submit">Add burger</button>
+  <button class="btn btn-sm btn-primary" type="submit">Add burger</button>
 </form>

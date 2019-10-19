@@ -1,0 +1,14 @@
+body {
+  padding: 20px;
+}
+
+li {
+  margin: 5px 0 5px 0;
+  border: 1px black solid;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+button {
+  margin-left: 10px;
+}
