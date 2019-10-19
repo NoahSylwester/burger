@@ -1,21 +1,21 @@
 <h1>Burgers!</h1>
 
-<h2>Uneaten Burgers</h2>
+<h2>Uneaten Burgers:</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      <li>{{burger_name}}<button class="update-button btn btn-sm btn-primary">Update</button><button class="delete-button btn btn-sm btn-primary">Delete</button></li>
+      <li>{{burger_name}}<button data-id="{{id}}" data-newDevoured="{{devoured}}" class="update-button btn btn-sm btn-primary">Update</button><button data-id="{{id}}" class="delete-button btn btn-sm btn-primary">Delete</button></li>
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Eaten burgers</h2>
+<h2>Eaten burgers:</h2>
 
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      <li>{{burger_name}}<button class="update-button btn btn-sm btn-primary">Update</button><button class="delete-button btn btn-sm btn-primary">Delete</button></li>
+      <li>{{burger_name}}<button data-id="{{id}}" data-newDevoured="{{devoured}}" class="update-button btn btn-sm btn-primary">Update</button><button data-id="{{id}}" class="delete-button btn btn-sm btn-primary">Delete</button></li>
     {{/if}}
   {{/each}}
 </ul>

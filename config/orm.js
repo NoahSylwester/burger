@@ -27,7 +27,16 @@ var orm = {
         throw err;
       }
       cb(result);
-    });
+    });    
+  },
+  deleteOne: function(tableInput, burgerNameInput, cb) {
+    var queryString = "DELETE FROM " + tableInput + " WHERE burger_name='" + burgerNameInput +"';";
+    connection.query(queryString, function(err, result) {
+      if (err) {
+        throw err;
+      }
+      cb(result);
+    });    
   }
 };
 module.exports = orm;
