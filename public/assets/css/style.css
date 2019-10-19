@@ -1,12 +1,15 @@
 body {
   padding: 20px;
   background: burlywood;
+  background-image: url('../images/burger.png');
+  background-size: 100%;
   text-align: center;
 }
 
 h1 {
+  border: 1px white solid;
   padding: 10px;
-  background: rgb(143, 56, 22);
+  background: rgb(102, 35, 15);
   border-radius: 7px;
   color: white;
 }
@@ -14,17 +17,47 @@ h1 {
 img {
   object-fit: contain;
   width: 25%;
+  display: none;
 }
 
 li {
   margin: 5px 0 5px 0;
-  border: 1px black solid;
+  border: 1px white solid;
   border-radius: 7px;
   padding: 5px;
-  background: rgb(141, 23, 23);
   color: white;
 }
 
 button {
   margin-left: 10px;
+}
+
+.uneaten {
+  background: rgb(141, 23, 23);
+}
+
+.eaten {
+  background: rgb(255, 169, 41);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-box {
+  border: 1px white solid;
+  background: rgb(50, 95, 8);
+  width: 50%;
+  border-radius: 7px;
+  padding: 15px;
+  color: white;
+}
+
+.burgers {
+  text-align: center;
+}
+
+#burger {
+  width: 100%;
 }
