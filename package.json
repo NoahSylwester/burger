@@ -24,5 +24,6 @@
   },
   "engines": {
     "node": "v12.4.0"
-  }
+  },
+  "devDependencies": {}
 }
