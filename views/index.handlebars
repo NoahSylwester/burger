@@ -13,8 +13,8 @@
     <ul>
       {{#each burgers}}
       {{#unless devoured}}
-      <li>{{burger_name}}<button data-id="{{id}}" class="update-button btn btn-sm btn-primary">Update</button><button
-          data-id="{{id}}" class="delete-button btn btn-sm btn-primary">Delete</button></li>
+      <li>{{burger_name}}<button data-id="{{id}}" class="update-button btn btn-sm btn-warning">Eat it!</button><button
+          data-id="{{id}}" class="delete-button btn btn-sm btn-warning">Delete</button></li>
       {{/unless}}
       {{/each}}
     </ul>
@@ -25,7 +25,7 @@
     <ul>
       {{#each burgers}}
       {{#if devoured}}
-      <li>{{burger_name}}<button data-id="{{id}}" class="delete-button btn btn-sm btn-primary">Delete</button></li>
+      <li>{{burger_name}}<button data-id="{{id}}" class="delete-button btn btn-sm btn-warning">Delete</button></li>
       {{/if}}
       {{/each}}
     </ul>
@@ -42,7 +42,7 @@
         <input type="text" id="burger" name="name">
       </div>
 
-      <button class="btn btn-sm btn-primary" type="submit">Add burger</button>
+      <button class="btn btn-sm btn-warning" type="submit">Add burger</button>
     </form>
   </div>
 </div>

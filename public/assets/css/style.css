@@ -6,7 +6,9 @@ body {
 
 h1 {
   padding: 10px;
-  background: rgb(143, 56, 22)
+  background: rgb(143, 56, 22);
+  border-radius: 7px;
+  color: white;
 }
 
 img {
