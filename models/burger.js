@@ -12,13 +12,13 @@ var burger =
       cb(res);
     });
   },
-  updateOne: function(burgerName, cb) {
-    orm.updateOne("burgers", burgerName, function(res) {
+  updateOne: function(burgerId, cb) {
+    orm.updateOne("burgers", burgerId, function(res) {
       cb(res);
     });
   },
-  deleteOne: function() {
-    orm.deleteOne("burgers", burgerName, function(res) {
+  deleteOne: function(burgerId, cb) {
+    orm.deleteOne("burgers", burgerId, function(res) {
       cb(res);
     });
   }

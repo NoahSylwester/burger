@@ -20,8 +20,8 @@ var orm = {
       cb(result);
     });
   },
-  updateOne: function(tableInput, burgerNameInput, cb) {
-    var queryString = "UPDATE " + tableInput + " SET devoured=TRUE WHERE burger_name='" + burgerNameInput +"';";
+  updateOne: function(tableInput, burgerIdInput, cb) {
+    var queryString = "UPDATE " + tableInput + " SET devoured=TRUE WHERE id='" + burgerIdInput +"';";
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;
@@ -29,8 +29,8 @@ var orm = {
       cb(result);
     });    
   },
-  deleteOne: function(tableInput, burgerNameInput, cb) {
-    var queryString = "DELETE FROM " + tableInput + " WHERE burger_name='" + burgerNameInput +"';";
+  deleteOne: function(tableInput, burgerIdInput, cb) {
+    var queryString = "DELETE FROM " + tableInput + " WHERE id='" + burgerIdInput +"';";
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;
