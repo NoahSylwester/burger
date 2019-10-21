@@ -1,5 +1,6 @@
 var orm = require('../config/orm.js');
 
+// simplify and streamline orm functions for our burger model
 var burger = 
 {
   selectAll: function(cb) {

@@ -16,6 +16,7 @@ router.get("/", function(req, res) {
   })
 });
 
+// handling post request
 router.post("/api/burgers", function(req, res) {
   burger.insertOne(
     req.body.name,
@@ -25,6 +26,7 @@ router.post("/api/burgers", function(req, res) {
   });
 });
 
+// handling put request
 router.put("/api/burgers/:id", function(req, res) {
   var id = req.params.id;
 
@@ -40,6 +42,7 @@ router.put("/api/burgers/:id", function(req, res) {
   });
 });
 
+// handling delete request
 router.delete("/api/burgers/:id", function(req, res) {
   var id = req.params.id;
 
