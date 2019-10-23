@@ -7,4 +7,4 @@
  Create a burger, and eat it too.
 
  A quick demo: 
- [demo](burger.gif)
+ [demo](./burger.gif)
